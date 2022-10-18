@@ -9,7 +9,7 @@ class HomeController{
 
     public function __construct()
     {
-        $this->blade=new Blade('views','cache');
+        $this->blade=new Blade(  'views','cache');
     }
 
     #Página index
