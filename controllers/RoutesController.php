@@ -23,15 +23,16 @@ class RoutesController
     }
 
     #Chamar o controller e o método requisitado
+    # Usado em para trabalhar com as rotas no arquivo web.php
     public function getRoute($request,$action)
     {
         $url=self::parseUrl(0);
         if($url==$request){
-            $actionFinal=explode('@',$action);
-            $controller="\\Controllers\\{$actionFinal[0]}";
-            $method=$actionFinal[1];
-            $instance=new $controller;
-            echo call_user_func_array([$instance,$method],self::parseUrl());
+            $actionFinal=explode('@',$action); // Divide a action em 2 arrays usando o @ como divisor ex:[ControllerHome ] e [index]
+            $controller="\\Controllers\\{$actionFinal[0]}"; // A pasta controller sendo concatenada com o resultado da primeira pocisao da action  ex:[ControllerHome]
+            $method=$actionFinal[1];  // Como segundo parametro temos s outra parte da action  ex: [ index]
+            $instance=new $controller; // Criando um objeto da classe retornada ex: [ControllerHome]
+            echo call_user_func_array([$instance,$method],self::parseUrl());  // chama a classe do Controler e o metodo 
         }
     }
 }
