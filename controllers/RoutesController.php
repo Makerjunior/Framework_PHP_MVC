@@ -18,6 +18,11 @@ class RoutesController
                 return false;
             }
         }else{
+            // echo " Url passada ";
+            // echo ("<pre>");
+            // var_dump($url);
+            // echo ("<pre>");
+
             return $url;
         }
     }
@@ -27,12 +32,19 @@ class RoutesController
     public function getRoute($request,$action)
     {
         $url=self::parseUrl(0);
-        if($url==$request){
+        // echo " Url passada com parametro";
+        // echo ("<pre>");
+        // var_dump($url);
+        // echo ("</pre>");
+
+        if($url==$request){              // Se a url pasado for iqual a passada como parametro 
             $actionFinal=explode('@',$action); // Divide a action em 2 arrays usando o @ como divisor ex:[ControllerHome ] e [index]
             $controller="\\Controllers\\{$actionFinal[0]}"; // A pasta controller sendo concatenada com o resultado da primeira pocisao da action  ex:[ControllerHome]
             $method=$actionFinal[1];  // Como segundo parametro temos s outra parte da action  ex: [ index]
             $instance=new $controller; // Criando um objeto da classe retornada ex: [ControllerHome]
-            echo call_user_func_array([$instance,$method],self::parseUrl());  // chama a classe do Controler e o metodo 
+              
+           // Chama da classe instance , o method , pasando os parametros retornados pelo metodo parceUrl
+           echo call_user_func_array([$instance,$method],self::parseUrl());  
         }
     }
 }
