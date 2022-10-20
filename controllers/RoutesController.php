@@ -44,7 +44,7 @@ class RoutesController
             $instance=new $controller; // Criando um objeto da classe retornada ex: [ControllerHome]
               
            // Chama da classe instance , o method , pasando os parametros retornados pelo metodo parceUrl
-           echo call_user_func_array([$instance,$method],self::parseUrl());  
+         echo call_user_func_array([$instance,$method],self::parseUrl());  
         }
     }
 }

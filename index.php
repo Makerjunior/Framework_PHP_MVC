@@ -5,37 +5,39 @@ include('routes/web.php');
 
  #Estudos 
 
- class Carro{
-   protected $Marca;
-   protected $Preco;
-    public function __construct()
-    {
+//  class Carro{
+
+//     public function __construct()
+//     {
          
-            echo "Carro "; 
+         
    
-    }
+//     }
 
-    public function preco($Marca)
-    {
-        switch ($this->Marca) {
-            case $Marca:
-               $this->Preco = 100000;
-                break;
-            case $Marca:
-                $this->Preco = 2000;
-                break;
-        }
+//     public function indexCarros($Marca=null)
+//     {
+     
+      
+//       require_once('xtext/text.php');
 
-        return "Valor do Veiculo :".$this->Preco;
-   }
+//     }
 
-   public function cores(){
-    return ['BMW','amarelo','verde'];
-   }
+   
 
- }
+//    public static function setmarcas($Dbdemarcas){
+//     return $Dbdemarcas;
+//    }
 
- $carro = new Carro();
+//  }
+
+//  $carro = new Carro();
+//  $DBMarcas=['BMW','GM','FORD','FIAT'];
+// $m = Carro::setmarcas($DBMarcas);
+
+// //call_user_func([$carro,'preco'],'BMW');
+// //call_user_func_array([$carro,'preco'],array($m));
+
+// call_user_func_array([$carro,'indexCarros'],array($m));
 
 
- call_user_func_array([$carro,'preco'],self::cores());
+

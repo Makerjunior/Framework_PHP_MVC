@@ -15,6 +15,7 @@ class ProdutosController{
     #Página index
     public function show($url=null, $produto=null, $marca=null)
     {
+       
         
         return $this->blade->render('produtos',compact('produto','marca'));
     }
