@@ -1,9 +1,21 @@
 
 <?php $__env->startSection('title','Produtos'); ?>
 <?php $__env->startSection('content'); ?>
-    <h1>Produtos</h1>
-<p>Produto:<?php echo e($produto ?? "Não encontrado"); ?></p>
-<p>Marca:<?php echo e($marca ?? "Não encontrado"); ?></p>
+<h1>Meus Produtos</h1>
+    <table>
+        <tr>
+            <td>Nome</td>
+            <td>Preço</td>
+            <td>Ação</td>
+        </tr>
+        <?php $__currentLoopData = $data; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $produtos): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                <tr>
+                    <td><?php echo e($produtos->name); ?></td>
+                    <td><?php echo e($produtos->price); ?></td>
+                    <td></td>
+                </tr>
+        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+    </table>
 
 <?php $__env->stopSection(); ?>    
  

@@ -6,6 +6,6 @@ if(substr($_SERVER['DOCUMENT_ROOT'],-1)=='/'){ define("DIRREQ","{$_SERVER['DOCUM
 
 #Banco de Dados
 define('DBHOST','localhost');
-define('DBNAME','sistema');
+define('DBNAME','sistemablade');
 define('DBUSER','root');
 define('DBPASS','');

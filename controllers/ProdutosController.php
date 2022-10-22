@@ -2,8 +2,8 @@
 namespace Controllers;
 
 use Jenssegers\Blade\Blade;
-
-class ProdutosController{
+use Models\ProdutoModel;
+class ProdutosController extends ProdutoModel{
 
     private $blade;
 
@@ -12,11 +12,11 @@ class ProdutosController{
         $this->blade=new Blade(  'views','cache');
     }
 
-    #Página index
+    #Página index         parametros que podem ser pasados na url e acesados na view
     public function show($url=null, $produto=null, $marca=null)
     {
        
-        
-        return $this->blade->render('produtos',compact('produto','marca'));
+        $data =$this->showAll();
+        return $this->blade->render('produtos',compact('data'));
     }
 }
