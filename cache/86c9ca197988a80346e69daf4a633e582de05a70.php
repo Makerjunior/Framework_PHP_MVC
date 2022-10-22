@@ -6,19 +6,24 @@
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <!-- CSS only -->
-<!-- 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> -->
-<!-- <link rel="stylesheet" href="C:/wamp64/www/MVC/views/css/style.css"> -->
-<!-- <link rel="stylesheet" href="<?php echo DIRPAGE.'MVC/css/style.css'; ?>"> -->
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<link rel="stylesheet" href="<?php echo DIRPAGE.'MVC/views/css/style.css'; ?>">
     <title><?php echo $__env->yieldContent('title'); ?></title>
 
 
 </head>
 
 <body>
-<a href="home">Home</a>
 
-<a href="produtos">Produtos</a>
+<nav class="nav justify-content-center  ">
+  <a class="nav-link " href="/MVC/home" >Home</a>
+  <a class="nav-link" href="produtos">Produtos</a>
+  <!-- <a class="nav-link " href="#">Disabled link</a> -->
+</nav>
+
+
 
     <?php echo $__env->yieldContent('content'); ?>
 

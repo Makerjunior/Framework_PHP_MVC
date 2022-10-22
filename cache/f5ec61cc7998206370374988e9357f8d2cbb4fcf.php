@@ -1,8 +1,14 @@
 
 <?php $__env->startSection('title','Produtos'); ?>
 <?php $__env->startSection('content'); ?>
-<h1>Meus Produtos</h1>
-    <table>
+<h1 class="text-center mt-4">Meus Produtos</h1>
+<div class=" text-center mt-4">
+<input type="text" id="seach" placeholder="Username"  >
+  <span class="btn btn-primary" >Seach</span>
+
+</div>
+
+     <table>
         <tr>
             <td>Nome</td>
             <td>Preço</td>

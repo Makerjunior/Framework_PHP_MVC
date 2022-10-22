@@ -7,3 +7,6 @@ table td{padding: 10px 0;}
 table td:nth-child(1){width: 70%;}
 table td:nth-child(2){width: 20%;}
 table td:nth-child(3){width: 10%;}
+
+#seach{width:450px; height: 35px; text-align: center;}
+

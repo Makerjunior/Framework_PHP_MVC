@@ -19,4 +19,6 @@ class ProdutosController extends ProdutoModel{
         $data =$this->showAll();
         return $this->blade->render('produtos',compact('data'));
     }
+
+    
 }
