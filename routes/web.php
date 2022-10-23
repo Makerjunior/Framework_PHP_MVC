@@ -5,5 +5,7 @@ $routes=new \Controllers\RoutesController();
  * a função getRoutes() está na pasta controllers arquivo ControlllersRoute
  */
 # a rota Home sera indicada por vazio ...
+$routes->getRoute('','HomeController@index');   
 $routes->getRoute('home','HomeController@index');   
+$routes->getRoute('Pesquisaajax','Controllerajax@index'); 
 $routes->getRoute('produtos','ProdutosController@show');

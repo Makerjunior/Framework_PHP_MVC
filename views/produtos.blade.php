@@ -2,11 +2,7 @@
 @section('title','Produtos')
 @section('content')
 <h1 class="text-center mt-4">Meus Produtos</h1>
-<div class=" text-center mt-4">
-<input type="text" id="seach" placeholder="Username"  >
-  <span class="btn btn-primary" >Seach</span>
 
-</div>
 
      <table>
         <tr>
