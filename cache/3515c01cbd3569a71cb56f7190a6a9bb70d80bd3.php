@@ -7,7 +7,7 @@
 
    <h2 class="text-center m-4">Pesquisar produtos:</h2>
    <div id="Pesquisar" class="text-center">
-      <form action="controller.php" method="POST" name="form" id="form">
+      <form action="C:\wamp64\www\MVC\controllers\Pesquisa.php" method="GET" name="form" id="form">
          <input type="text" name="nome" id="nome" placeholder="Digite o nome:">
          <input type="submit" value="Buscar">
       </form>

@@ -23,7 +23,7 @@
 <nav class="nav justify-content-center  ">
   <a class="nav-link " href="/MVC/home" >Home</a>
   <a class="nav-link" href="produtos">Produtos</a>
-  <a class="nav-link " href="Pesquisaajax">Pesquisar</a>
+  <!-- <a class="nav-link " href="Pesquisaajax">Pesquisar</a> -->
 </nav>
 
 
