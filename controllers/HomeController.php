@@ -15,7 +15,7 @@ class HomeController{
     #Página index
     public function index()
     {
-        $name='Thiago';
+        $name='Usuário !';
         return $this->blade->render('home',compact('name'));
     }
 }

@@ -3,7 +3,7 @@
 <?php $__env->startSection('title','Homepage'); ?>
 <?php $__env->startSection('content'); ?>
 <div class="text-center mt-5">
-<h1>Minha primeira seção</h1>
+<h1>CRUD PHP, MVC, PDO.</h1>
     Bem vindo <?php echo e($name); ?>
 
     <br><br>

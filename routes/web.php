@@ -7,5 +7,7 @@ $routes=new \Controllers\RoutesController();
 # a rota Home sera indicada por vazio ...
 $routes->getRoute('','HomeController@index');   
 $routes->getRoute('home','HomeController@index');   
-$routes->getRoute('Pesquisaajax','Controllerajax@index'); 
-$routes->getRoute('produtos','ProdutosController@show');
+$routes->getRoute('produtos','ProdutosController@index');
+$routes->getRoute('produtos_create','ProdutosController@create');
+$routes->getRoute('produto_edit','ProdutosController@edit');
+$routes->getRoute('produto_delete','ProdutosController@delete');
