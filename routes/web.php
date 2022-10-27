@@ -11,3 +11,7 @@ $routes->getRoute('produtos','ProdutosController@index');
 $routes->getRoute('produtos_create','ProdutosController@create');
 $routes->getRoute('produto_edit','ProdutosController@edit');
 $routes->getRoute('produto_delete','ProdutosController@delete');
+
+
+#Rotas Ajax
+$routes->getRoute('reqAjaxALL','ProdutosController@showAjax');
