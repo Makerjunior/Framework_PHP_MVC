@@ -45,7 +45,7 @@
  */           
             function addprodutos(events){
              console.log(events.target);
-            //  events.preventDefault();
+            //   events.preventDefault();
 
              let ajax = new XMLHttpRequest();
              let nameF = document.querySelector('#name').value; // pegando dados do formulario
@@ -53,7 +53,7 @@
              console.log(nameF)
              console.log(priceF)
 
-             ajax.open('GET', 'produtos_create'); // Abrindo a requesição
+             ajax.open('POST', 'produtos_create'); // Abrindo a requesição
              ajax.setRequestHeader('Content-type','application/x-www-form-urlencoded'); // Cabeçalho da requisição ajax
                  // Montando requisição
                  ajax.onreadystatechange = function () {
