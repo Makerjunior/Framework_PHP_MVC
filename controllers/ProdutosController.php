@@ -28,18 +28,21 @@ class ProdutosController extends ProdutoModel{
 
     public function create()
 {
+  
     if(count($_POST)>0){
-      
         $name=filter_input(INPUT_POST,'name',FILTER_DEFAULT);
         $price=filter_input(INPUT_POST,'price',FILTER_DEFAULT);
+       echo $name . $price;
+
         if($this->store($name,$price)){
-            $success='Dados inseridos com sucesso!';
-            return $this->blade->render('produtos_create',compact('success'));
+             echo ('Dados inseridos com sucesso!');
+           // return $this->blade->render('produtos_create',compact('success'));
         }
     }else{
-       
-        return $this->blade->render('produtos_create');
-    }
+        echo ("err");
+       // return $this->blade->render('produtos_create');
+  }
+
 }
 
 public function edit($url=null,$id=null)

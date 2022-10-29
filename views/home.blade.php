@@ -41,6 +41,8 @@
 
 <script src="ajax/homeAjax.js"></script>
 <script src="ajax/produtosAjax.js"></script>
+<script src="ajax/InsertAjax.js"></script>
+
 
 
 </script> 
